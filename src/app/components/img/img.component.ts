@@ -1,17 +1,14 @@
-import { Component, Input, OnInit, Output, EventEmitter, OnChanges, AfterViewInit, OnDestroy } from '@angular/core';
+import { Component, Input, OnInit, Output, EventEmitter, OnChanges, OnDestroy } from '@angular/core';
 
 @Component({
   selector: 'app-img',
   templateUrl: './img.component.html',
   styleUrls: ['./img.component.scss']
 })
-export class ImgComponent implements OnInit, OnChanges, AfterViewInit,OnDestroy {
+export class ImgComponent implements OnInit, OnChanges,OnDestroy {
   @Input() img: string ='';
   @Output() loaded = new EventEmitter<string>(); 
   imageDefault = './assets/images/default.png';
-  // counter=0;
-  // counterfn:number | undefined;
-
 
   constructor(){
     //before render
@@ -32,10 +29,7 @@ export class ImgComponent implements OnInit, OnChanges, AfterViewInit,OnDestroy 
     //change inputs
     console.log('ngOnChanges', 'imgValue =>', this.img);
   }
-  ngAfterViewInit(){
-    //after render
-    //handler children
-  }
+
   ngOnDestroy() {
     //delete 
     console.log('ngOnDestroy');

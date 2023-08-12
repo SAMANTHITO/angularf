@@ -81,3 +81,34 @@
       display: block;
     }
   }
+
+  // .shopping-cart-container {
+  //   position: relative;
+  //   display: block;
+  //   .counter {
+  //     position: absolute;
+  //     right: -12px;
+  //     top: -4px;
+  //     color: #fefefe;
+  //     font-size: 12px;
+  //     width: 16px;
+  //     height: 18px;
+  //     border-radius: 50%;
+  //     text-align: center;
+  //     line-height: 20px;
+  //     background-color: #e91212f6;
+  //   }
+  // }
+  .counter{
+    background: rgb(10, 180, 129);
+    border-radius: 0.8em;
+    -moz-border-radius: 0.8em;
+    -webkit-border-radius: 0.8em;
+    color: #ffffff;
+    display: inline-block;
+    font-weight: bold;
+    line-height: 1.2em;
+    margin-right: 15px;
+    text-align: center;
+    width: 1.2em;
+    }
